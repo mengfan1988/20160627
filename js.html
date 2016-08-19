@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./jquery-3.0.0.min.js"></script>
+    </head>
+    <body>
+        <div>
+			<span class='s'></span>
+			<p></p>
+			<label></label>
+			<a href='' hreflang='en'>英文</a>
+			<a href='' hreflang='zh'>中文</a>
+			<input name='new man' id='new'>
+			<input name='new_man'>
+			<input name='new nan' id='new'>
+			
+		
+		</div>
+        <script>
+                    $(function(){
+					$('span,p,label').html('我们是一家人');
+					$('[hreflang=en]').css('color','red');
+					$("[name~='man']").val('nih');
+					$("[name$='nan']").val('nih111');
+					$("[id][name$='nan']").val('only this one');
+					})
+          
+        </script>
+    </body>
+</html>

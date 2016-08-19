@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="jquery-3.0.0.min.js"></script>
+        <style>
+            .aaa{
+                background: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <span>s</span>
+            <span>s</span>
+            <span>s</span>
+        </div>
+        <div>
+            <span>s nan</span>
+            <span>s</span>
+            <span>s</span>
+        </div>
+        <div>
+            <span>2</span>
+            <span></span>
+            <span>3</span>
+        </div>
+        
+        <script>
+            $(function(){
+                $('div span:last-child').css('text-decoration','underline').hover(function(){
+                    $(this).addClass('aaa');
+                },function(){
+                $(this).removeClass('aaa');
+            });
+            $('span:empty').html('aaaa').css('background','blue');//或者用text=html
+        })
+        </script>
+    </body>
+</html>
